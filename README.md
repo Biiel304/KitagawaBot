@@ -1,7 +1,7 @@
 # **Sobre TabielBot**
 
 Esse é meu primeiro bot JavaScript, ainda estou estudando, editando e melhorando muito nele.... Resolvi postá-lo para ajudar a comunidade e receber opiniões sobre o que pode ser melhorado... Dependências necessárias: MongoDB, momento e parse-ms. Atualmente o BOT possui comandos de gerenciamento de servidor e economia de moderação.
-Você pode ficar a vontade para sugerir mudanças, comandos eventos etc. Postei o minha instância aqui a fim de receber dicas e aprender mais com novas criticas.... se for usar o codigo fonte do bot, não retirar os créditos do criador e nem se vangloriar falando que criou TabielBot... **Atualmente o bot só está disponível em pt-BR mas terá traduções futuras para outras linguagens.**
+Você pode ficar a vontade para sugerir mudanças, comandos eventos etc. Postei o minha instância aqui a fim de receber dicas e aprender mais com novas criticas.... se for usar o codigo fonte do bot, não retirar os créditos do criador e nem se vangloriar falando que criou TabielBot... ***Atualmente o bot só está disponível em pt-BR mas terá traduções futuras para outras linguagens.***
 
 ## 🤔 **Como adicionar TabielBot em seu servidor?**
 
