@@ -86,7 +86,7 @@ exports.help = {
     name: "help",
     aliases: ["ajuda"],
     description: "Comando para listar todos os comandos do bot",
-    usage: "<prefix> help",
+    usage: "<prefix>help",
     category: "information"
   };
   
