@@ -47,5 +47,8 @@ exports.run = (client, message, args) => {
   exports.help = {
     name: "kick",
     aliases: ["expulsar"],
+    description: "Comando para expulsar algum membro do seu servidor",
+    usage: "<prefix>kick <@user> motivo",
+    category: "Moderation"
   };
   

@@ -52,4 +52,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "xp",
   aliases: ["level"],
+  description: "Comando para saber seu nivel/xp no servidor",
+  usage: "<prefix>xp <@user>",
+  category: "information"
 };

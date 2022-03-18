@@ -7,22 +7,21 @@ exports.run = async (client, message, args) => {
     let useR = message.author;
 
     let daily = user.daily;
-    
+
     let atual = user.coins;
-    
+
     let coins = Math.floor(Math.random() * 5000 + 500);
-    
+
     let cooldown = 8.64e7;
-    
+
     let time = cooldown - (Date.now() - daily);
 
     if (daily !== null && cooldown - (Date.now() - daily) > 0) {
       let time = ms.cooldown - (Date.now() - daily);
 
-      const tempo = new MessageEmbed()
-  .setColor("#DDA0DD")
-  .setDescription(`> ❌ **| Você ja coletou o daily ${message.author}**
->  por favor espere o prazo para solicitar novamente`)
+      const tempo = new MessageEmbed().setColor("#DDA0DD")
+        .setDescription(`> ❌ **| Você ja coletou o daily ${message.author}**
+>  por favor espere o prazo para solicitar novamente`);
 
       return message.quote(tempo);
     } else {
@@ -44,4 +43,7 @@ exports.run = async (client, message, args) => {
 exports.help = {
   name: "daily",
   aliases: ["diario"],
+  description: "comando para pegar seu premio diário",
+  usage: "<prefix>daily",
+  category: "Economia"
 };

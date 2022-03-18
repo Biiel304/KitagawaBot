@@ -47,4 +47,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "rank",
   aliases: ["level"],
+  description: "Comando para saber o rank de xp do servidor",
+  usage: "<prefix>rank",
+  category: "information"
 };

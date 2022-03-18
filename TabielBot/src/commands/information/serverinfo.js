@@ -67,11 +67,14 @@ exports.run = async (client, message, args) => {
       }
     )
     .setThumbnail(message.guild.iconURL({ dynamic: true }))
-    .setColor(process.env.EMBED_COLOR);
+    .setColor(process.env.ECOLOR);
 
   message.quote(SERVERINFO);
 };
 exports.help = {
   name: "serverinfo",
   aliases: ["si"],
+  description: "Comando para saber as informações do servidor",
+  usage: "<prefix>serverinfo",
+  category: "information"
 };

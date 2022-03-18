@@ -77,4 +77,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "contador",
   aliases: ["count"],
+  description: "Comando para configurar o sistema de contador de membros",
+  usage: "<prefix>contador",
+  category: "Config"
 };

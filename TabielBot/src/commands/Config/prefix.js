@@ -3,7 +3,7 @@ const Guild = require("../../database/Schemas/Guild");
 exports.run = (client, message, args) => {
   if (!message.member.hasPermission("MANAGE_GUILD"))
     return message.quote(
-      `${message.author}, tentou usar um comando restrito!!! Somente os administradores podem usar esse comando!`
+      `${message.author} calma ai engraçadinho, você não tem permissão para usar este comando!`
     );
   Guild.findOne({ _id: message.guild.id }, async function (err, server) {
     let prefixo = args[0];
@@ -36,4 +36,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "prefix",
   aliases: ["setprefix"],
+  description: "Comando para alterar o prefixo do servidor",
+  usage: "<prefix>prefix prefixo",
+  category: "Config"
 };

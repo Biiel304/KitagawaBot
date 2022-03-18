@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 exports.run = (client, message, args) => {
   if (!message.member.hasPermission("MANAGE_GUILD"))
     return message.quote(
-      `${message.author}, tentou usar um comando restrito!!! Somente os administradores podem usar esse comando!`
+      `${message.author} calma ai engraçadinho, você não tem permissão para usar este comando!`
     );
   Guild.findOne({ _id: message.guild.id }, async function (err, server) {
     if (args[0] == "canal") {
@@ -128,7 +128,7 @@ exports.run = (client, message, args) => {
           }**`,
         }
       )
-      .setColor(process.env.EMBED_COLOR)
+      .setColor(process.env.EOLOR)
       .setFooter(
         `Comando requisitado por: **${message.author.username}`,
         message.author.displayAvatarURL({ dynamic: true })
@@ -143,4 +143,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "welcome",
   aliases: ["setwelcome"],
+  description: "Comando para configurar o sistema de boas vindas do servidor",
+  usage: "<prefix>welcome",
+  category: "Config"
 };

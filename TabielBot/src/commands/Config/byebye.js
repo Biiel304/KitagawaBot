@@ -4,7 +4,7 @@ const Discord = require("discord.js");
 exports.run = (client, message, args) => {
   if (!message.member.hasPermission("MANAGE_GUILD"))
     return message.quote(
-      `${message.author}, tentou usar um comando restrito!!! Somente os administradores podem usar esse comando!`
+      `${message.author} calma ai engraçadinho, você não tem permissão para usar este comando!`
     );
 
   Guild.findOne({ _id: message.guild.id }, async function (err, server) {
@@ -144,4 +144,7 @@ exports.run = (client, message, args) => {
 exports.help = {
   name: "byebye",
   aliases: ["setbyebye"],
+  description: "Comando para configurar o sistema de byebye.",
+  usage: "<prefix>byebye",
+  category: "Config"
 };

@@ -79,7 +79,7 @@ exports.run = async (client, message, args) => {
       },
       { name: "É bot?", value: user.user.bot ? "Sim" : "Não", inline: true }
     )
-    .setColor(process.env.EMBED_COLOR)
+    .setColor(process.env.ECOLOR)
     .setTimestamp()
     .setThumbnail(user.user.displayAvatarURL({ dynamic: true }))
     .setFooter(
@@ -93,4 +93,7 @@ exports.run = async (client, message, args) => {
 exports.help = {
   name: "userinfo",
   aliases: ["uinfo"],
+  description: "Comando para saber as informações de um usuario",
+  usage: "<prefix>userinfo <@user>",
+  category: "information"
 };

@@ -1,4 +1,5 @@
 const Discord = require("discord.js")
+const Guild = require("../../database/Schemas/Guild");
 exports.run = (client, message, args) => {
 
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.quote(`${message.author}, você não pode usar o martelinho pois você não tem permissão para banir usuários.`)
@@ -41,11 +42,14 @@ exports.run = (client, message, args) => {
         
         member.ban({days: 7, reason: reason})
     }
-    
   };
-  
+
   exports.help = {
     name: "ban",
     aliases: ["banir"],
+    description: "Comando para banir um membro do seu servidor.",
+    usage: `<prefoxo>>ban <@user> motivo`,
+    category: "Moderation"
+
   };
   
