@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "canvacord": "^5.2.3",
+    "discord.js": "^12.5.1",
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "momen": "^0.0.1-security",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "mongoose": "^6.2.6",
+    "mongose": "^0.0.2-security",
+    "parse-ms": "^3.0.0"
+  }
+}
