@@ -9,7 +9,7 @@ require("dotenv").config();
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 
-const modules = ["information", "Config", "Economia", "owner"];
+const modules = ["information", "Config", "Economia", "owner", "Moderation"];
 const fs = require("fs");
 const dbIndex = require("./src/database/index.js");
 dbIndex.start();
