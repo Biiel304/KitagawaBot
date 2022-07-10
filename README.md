@@ -13,3 +13,5 @@ Em breve estarei disponibilizando link para adiciona-lo em sua guild e trazer ma
 - Após instalado, basta baixar o repositório e abrir a pasta com o vscode
 - Abra o terminal do vscode e cole npm install e após isso edit a pasta .env com sua token e link de acesso a base do `mongodb`
 - depois use `node .` e seu bot estará ligado
+
+#créditos: By Splinter
